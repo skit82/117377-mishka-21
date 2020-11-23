@@ -1,0 +1,36 @@
+.page-footer {
+  width: auto;
+  margin: 0 auto;
+  background-color: $bg-color;
+}
+.page-footer__copyright-text {
+  margin: 0px;
+  font-size: $font-size--h4;
+  line-height: $font-size--h4 - 1;
+  font-weight: bold;
+  padding-top: 4px;
+}
+
+@media (min-width: $screen-md) {
+  .page-footer__copyright-text {
+    margin: 0px;
+    padding-top: 8px;
+    font-size: $font-size--middle + 2;
+    line-height: $font-size--middle + 1;
+    font-weight: bold;
+    color: $color-black;
+  }
+}
+
+@media (min-width: $screen-xl) {
+  .page-footer__inner {
+    max-width: 1050px;
+    padding: 0px 50px;
+    margin: 0px auto;
+  }
+  .page-footer__copyright-text {
+    margin-right: 29px;
+    padding-top: 9px;
+  }
+}
+

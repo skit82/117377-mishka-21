@@ -1,0 +1,46 @@
+.slider__nav {
+  position: static;
+  margin-top: 29px;
+  margin-bottom: 38px
+}
+.slider__arrow {
+  width: 130px;
+  padding: 10px 0px;
+  border: 1px solid $grey--dark;
+  background-color: #ffffff;
+}
+
+@media (min-width: $screen-md) {
+  .slider {
+    position: relative;
+  }
+  .slider__nav {
+    position: absolute;
+    bottom: 12px;
+    right: 0px;
+    width: 155px;
+    margin: 0px;
+  }
+  .slider__arrow {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+
+    &:nth-child(2) {
+      margin-left: 33px;
+      margin-right: 14px;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+  .slider__nav {
+    width: 155px;
+  }
+  .slider__arrow {
+    &:nth-child(2) {
+      margin-right: 15px;
+      margin-left: 35px;
+    }
+  }
+}
