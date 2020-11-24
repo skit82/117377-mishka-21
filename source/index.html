@@ -8,15 +8,17 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="">
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle">
+      <div class="main-nav__logo">
+        <a class="main-nav__logo-link">
+          <img src="" alt="Логотип Мишка">
+        </a>
+        <button class="main-nav__toggle">
         <span class="visually-hidden">
           Открыть меню
         </span>
-      </button>
+        </button>
+      </div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">
@@ -58,19 +60,23 @@
   </header>
   <main class="page-main">
     <section class="promo">
-      <h1 class="promo__title">
-        Милые штуки ручной  работы&nbsp;для&nbsp;дома
+      <h1 class="promo__title promo__title--box">
+        Милые штуки ручной работы&nbsp;для&nbsp;дома
       </h1>
-      <div class="promo__inner">
+      <div class="promo__wrapper">
         <ul class="promo__list">
           <li class="promo__item promo__item--decor">
             <a class="promo__link" href="#">
-              Предметы интерьера
+              <p class="promo__inner promo__inner--decor">
+                <span class="promo__text">Предметы интерьера</span>
+              </p>
             </a>
           </li>
           <li class="promo__item promo__item--toy">
             <a class="promo__link" href="#">
-              Детские игрушки
+              <p class="promo__inner promo__inner--toy">
+                <span class="promo__text">Детские игрушки</span>
+              </p>
             </a>
           </li>
         </ul>
@@ -182,13 +188,14 @@
       </div>
     </section>
     <section  class="contacts">
-      <div class="contacts__header">
+      <div class="contacts__wrapper">
+        <div class="contacts__header">
         <h2 class="contacts__header-title">
           Контакты
         </h2>
         <img class="contacts__header-foto" src="">
-      </div>
-      <dl class="contacts__list">
+        </div>
+        <dl class="contacts__list">
         <dt class="contacts__list-key">
           e-mail:
         </dt>
@@ -203,7 +210,8 @@
         <dd class="contacts__list-value">
           г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
         </dd>
-      </dl>
+        </dl>
+      </div>
       <div id="map" class="contacts__map">
         <img class="contacts__image" src="" width="" height="" alt="Карта">
       </div>
