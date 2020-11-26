@@ -15,7 +15,7 @@
   font-weight: bold;
   color: $color-black;
 
-  &__name:last-child {
+  &:last-child {
     margin: 0px;
   }
 }
@@ -79,7 +79,6 @@
   .field-checkbox__input {
     margin-right: 28px;
   }
-
   .field-checkbox__name {
     width: 238px;
     margin-bottom: 28px;
@@ -87,7 +86,6 @@
     padding-bottom: 16px;
     font-size: $font-size--h4;
   }
-
   .field-checkbox__text {
     padding-left: 80px;
 
@@ -115,7 +113,6 @@
     }
   }
 }
-
 
 @media (min-width: $screen-xl) {
   .field-checkbox {
