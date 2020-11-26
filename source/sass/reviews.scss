@@ -1,25 +1,29 @@
 .reviews__title {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 22px;
   font-size: $font-size--sl;
   line-height: $font-size--sl + 5;
   font-weight: bold;
   color: $color-black;
 }
+
 .reviews__item {
-  margin: 0px;
+  margin: 0;
 }
+
 .reviews__item-text {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 27px;
   line-height: $font-size + 15;
 }
+
 .reviews__item-name {
   font-size: $font-size--middle;
   font-weight: bold;
   color: $color-black;
   margin-bottom: 20px;
 }
+
 .reviews__link {
   display: block;
   padding-top: 15px;
@@ -37,22 +41,26 @@
 @media (min-width: $screen-md) {
   .reviews__wrraper {
     max-width: 668px;
-    padding: 0px 50px;
+    padding: 0 50px;
   }
+
   .reviews__title {
     margin-bottom: 49px;
     font-size: $font-size--md + 16;
     line-height: $font-size--md + 23;
   }
+
   .reviews__item-text {
     width: 642px;
     margin-bottom: 55px;
     padding-left: 2px;
     font-size: $font-size--middle;
   }
+
   .reviews__item-name {
     margin-bottom: 1px;
   }
+
   .reviews__link {
     width: 172px;
     padding-top: 15px;
@@ -65,14 +73,16 @@
 @media (min-width: $screen-xl) {
   .reviews__wrapper {
     max-width: 1050px;
-    margin: 0px auto;
+    margin: 0 auto;
   }
+
   .reviews__title {
     margin-left: 170px;
     padding-top: 69px;
     font-size: $font-size--md + 26;
     line-height: $font-size--md + 30;
   }
+
   .reviews__item-text {
     margin-left: 175px;
     margin-bottom: 37px;
@@ -80,12 +90,15 @@
     font-size: $font-size--middle;
     line-height: $font-size--middle + 13;
   }
+
   .reviews__item-name {
     margin-left: 175px;
   }
+
   .reviews__item-nik-link {
     margin-left: 175px;
   }
+
   .reviews__link {
     width: 172px;
     padding-top: 15px;

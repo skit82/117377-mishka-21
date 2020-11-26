@@ -2,8 +2,9 @@
   width: auto;
   margin: 0 auto;
 }
+
 .order__title {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 30px;
   padding-top: 73px;
   padding-bottom: 77px;
@@ -14,13 +15,15 @@
   text-align: center;
   background-color: #f1f1f1;
 }
+
 .order__definition {
   margin: 0 auto;
   margin-bottom: 30px;
   padding: 0 30px;
 }
+
 .order__definition-text {
-  margin: 0px;
+  margin: 0;
   font-size: $font-size--h5;
   line-height: $font-size--h5 + 11;
   text-align: left;
@@ -32,6 +35,7 @@
     flex-direction: column;
     margin: 0 auto;
   }
+
   .order__title {
     margin-bottom: 72px;
     padding-top: 95px;
@@ -39,15 +43,17 @@
     font-size: $font-size--md + 16;
     line-height: $font-size--md + 23;
   }
+
   .order__definition {
     align-items: flex-start;
     max-width: 668px;
     margin: 0 auto;
     margin-bottom: 56px;
-    padding: 0px;
+    padding: 0;
   }
+
   .order__definition-text {
-    margin: 0px;
+    margin: 0;
     font-size: $font-size--middle;
     line-height: $font-size--middle + 13;
     text-align: left;
@@ -62,6 +68,7 @@
     font-size: $font-size--md + 26;
     line-height: $font-size--md + 30;
   }
+
   .order__definition {
     width: 700px;
     align-self: center;

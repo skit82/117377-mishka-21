@@ -2,18 +2,21 @@
   background-color: $bg-color-dark;
   margin-bottom: 28px;
 }
+
 .promo__wrapper {
   min-width: 320px;
   width: 100%;
-  margin: 0px auto;
+  margin: 0 auto;
 }
+
 .promo__list {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
+
 .promo__title {
-  margin: 0px;
+  margin: 0;
   padding-left: 35px;
   padding-right: 22px;
   padding-top: 70px;
@@ -24,6 +27,7 @@
   text-align: center;
   color: $color-black;
 }
+
 .promo__item {
 
   &--decor {
@@ -36,9 +40,11 @@
     background-color: $info-color;
   }
 }
+
 .promo__link {
   text-decoration: none;
 }
+
 .promo__inner {
 
   &--decor {
@@ -46,7 +52,7 @@
     padding-left: 30px;
     padding-top: 23px;
     padding-bottom: 18px;
-    margin: 0px;
+    margin: 0;
   }
 
   &--toy {
@@ -54,9 +60,10 @@
     padding-left: 30px;
     padding-top: 21px;
     padding-bottom: 22px;
-    margin: 0px;
+    margin: 0;
   }
 }
+
 .promo__text {
   font-size: $font-size--h4;
   line-height: $font-size--h4 + 5;
@@ -69,6 +76,7 @@
   .promo {
     margin-bottom: 45px;
   }
+
   .promo__title {
     padding-top: 156px;
     padding-bottom: 100px;
@@ -78,17 +86,19 @@
 
     &--box {
       max-width: 668px;
-      margin: 0px auto;
+      margin: 0 auto;
     }
   }
+
   .promo__text {
     font-size: $font-size--h4 + 1;
     line-height: $font-size--h4 + 11;
   }
+
   .promo__wrapper {
     max-width: 668px;
-    padding: 0px 50px;
-    margin: 0px auto;
+    padding: 0 50px;
+    margin: 0 auto;
   }
 }
 
@@ -96,6 +106,7 @@
   .promo {
     margin-bottom: 70px;
   }
+
   .promo__title {
     padding-top: 155px;
     padding-left: 215px;
@@ -107,8 +118,9 @@
       max-width: 1050px;
     }
   }
+
   .promo__wrapper {
     max-width: 1050px;
-    margin: 0px auto;
+    margin: 0 auto;
   }
 }

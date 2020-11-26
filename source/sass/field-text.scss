@@ -1,16 +1,19 @@
 .field-text {
   margin-bottom: 34px;
 }
+
 .field-text__name {
   font-size: $font-size--middle;
   line-height: $font-size--middle + 1;
   font-weight: bold;
   color: $color-black;
 }
+
 .field-text__list:nth-child(2),
 .field-text__list:nth-child(3) {
   margin-top: 24px;
 }
+
 .field-text__title {
   font-size: $font-size--middle;
   line-height: $font-size--middle - 1;
@@ -21,13 +24,14 @@
   &::before {
     position: absolute;
     content: "";
-    right: 0px;
+    right: 0;
     top: 7px;
     height: 1px;
     width: 198px;
     background-color: $text-aqua;
   }
 }
+
 .field-text__item {
   padding-top: 22px;
   padding-bottom: 15px;
@@ -40,6 +44,7 @@
     line-height: $font-size--middle + 1;
   }
 }
+
 .field-text__input {
   padding-top: 28px;
   padding-bottom: 20px;
@@ -47,6 +52,7 @@
   border-bottom: 2px solid $color-black;
   font-family: inherit;
 }
+
 .field-text__list {
   position: relative;
   display: flex;
@@ -58,10 +64,11 @@
     border-width: 2px;
     // border: 2px solid $color-black;
   }
+
   &--textarea .field-text__input {
     min-height: 123px;
     border: 2px solid $color-black;
-    padding: 0px;
+    padding: 0;
     padding-top: 15px;
     padding-left: 15px;
     font-family: inherit;
@@ -77,7 +84,7 @@
     &:active {
       opacity: 1;
       border: 2px solid $text-aqua;
-      outline: none
+      outline: none;
     }
   }
 }
@@ -85,46 +92,45 @@
 @media (min-width: $screen-md) {
   .field-text {
     width: 500px;
-    margin: 0px;
+    margin: 0;
     margin-bottom: 50px;
     padding-top: 65px;
 
     &--description {
       width: 100%;
-      padding: 0px;
+      padding: 0;
       margin-bottom: 52px;
     }
 
     &--block {
       position: relative;
       width: 668px;
-      margin: 0px;
+      margin: 0;
       padding-bottom: 52px;
-    }
-
-    &--block {
       padding-top: 17px;
     }
   }
+
   .field-text__name {
     margin-right: 26px;
     font-size: $font-size--h4;
   }
+
   .field-text__title {
     width: 167px;
 
     &::before {
-      display:none;
+      display: none;
     }
 
     &--block {
-      padding: 0px;
+      padding: 0;
       padding-top: 17px;
     }
   }
   .field-text__item {
     width: 100%;
-    padding: 0px;
+    padding: 0;
     padding-top: 4px;
     padding-bottom: 14px;
 
@@ -134,13 +140,15 @@
       letter-spacing: 0.025em;
     }
   }
+
   .field-text__list:nth-child(2),
   .field-text__list:nth-child(3) {
     margin-top: 40px;
   }
+
   .field-text__input {
     flex-grow: 1;
-    padding: 0px;
+    padding: 0;
     padding-left: 16px;
     padding-top: 4px;
     padding-bottom: 13px;
@@ -153,6 +161,7 @@
       font-family: inherit;
     }
   }
+
   .field-text__list {
     display: flex;
     flex-direction: row;
@@ -164,7 +173,7 @@
     &--textarea .field-text__input {
       min-height: 123px;
       border: 2px solid $color-black;
-      padding: 0px;
+      padding: 0;
       padding-top: 15px;
       padding-left: 15px;
       font-size: $font-size--h4;
@@ -196,10 +205,12 @@
       padding-top: 68px;
     }
   }
+
   .field-text__title {
     width: 175px;
     text-align: center;
   }
+
   .field-text__list {
 
     &--textarea {
