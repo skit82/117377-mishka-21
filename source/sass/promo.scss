@@ -25,10 +25,12 @@
   color: $color-black;
 }
 .promo__item {
+
   &--decor {
     height: 103px;
     background-color: $primary-color;
   }
+
   &--toy {
     height: 103px;
     background-color: $info-color;
@@ -38,6 +40,7 @@
   text-decoration: none;
 }
 .promo__inner {
+
   &--decor {
     padding-right: 30px;
     padding-left: 30px;
@@ -45,6 +48,7 @@
     padding-bottom: 18px;
     margin: 0px;
   }
+
   &--toy {
     padding-right: 30px;
     padding-left: 30px;
