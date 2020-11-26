@@ -1,0 +1,209 @@
+.field-text {
+  margin-bottom: 34px;
+}
+.field-text__name {
+  font-size: $font-size--middle;
+  line-height: $font-size--middle + 1;
+  font-weight: bold;
+  color: $color-black;
+}
+.field-text__list:nth-child(2),
+.field-text__list:nth-child(3) {
+  margin-top: 24px;
+}
+.field-text__title {
+  font-size: $font-size--middle;
+  line-height: $font-size--middle - 1;
+  font-weight: bold;
+  color: $text-aqua;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: 0px;
+    top: 7px;
+    height: 1px;
+    width: 198px;
+    background-color: $text-aqua;
+  }
+}
+.field-text__item {
+  padding-top: 22px;
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  font-family: inherit;
+
+  &::placeholder {
+    font-size: $font-size--middle;
+    line-height: $font-size--middle + 1;
+  }
+}
+.field-text__input {
+  padding-top: 28px;
+  padding-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  font-family: inherit;
+}
+.field-text__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &--textarea {
+    display: block;
+    // width: 260px;
+    border-width: 2px;
+    // border: 2px solid $color-black;
+  }
+   &--textarea .field-text__input {
+      min-height: 123px;
+      border: 2px solid $color-black;
+      padding: 0px;
+      padding-top: 15px;
+      padding-left: 15px;
+      font-family: inherit;
+      font-size: $font-size--h4;
+      line-height: $font-size--h4 - 1;
+      background-color: #ffffff;
+
+      &:hover {
+        border: 2px solid $text-aqua;
+        outline: none;
+      }
+
+      &:active {
+        opacity: 1;
+        border: 2px solid $text-aqua;
+        outline: none
+      }
+    }
+}
+
+@media (min-width: $screen-md) {
+  .field-text {
+    width: 500px;
+    margin: 0px;
+    margin-bottom: 50px;
+    padding-top: 65px;
+
+    &--description {
+      width: 100%;
+      padding: 0px;
+      margin-bottom: 52px;
+    }
+
+    &--block {
+      position: relative;
+      width: 668px;
+      margin: 0px;
+      padding-bottom: 52px;
+    }
+
+    &--block {
+      padding-top: 17px;
+    }
+  }
+  .field-text__name {
+    margin-right: 26px;
+    font-size: $font-size--h4;
+  }
+  .field-text__title {
+    width: 167px;
+
+    &::before {
+      display:none;
+    }
+
+    &--block {
+      padding: 0px;
+      padding-top: 17px;
+    }
+  }
+  .field-text__item {
+    width: 100%;
+    padding: 0px;
+    padding-top: 4px;
+    padding-bottom: 14px;
+
+    &::placeholder {
+      padding-left: 17px;
+      font-size: $font-size--h4;
+      letter-spacing: 0.025em;
+    }
+  }
+  .field-text__list:nth-child(2),
+  .field-text__list:nth-child(3) {
+    margin-top: 40px;
+  }
+  .field-text__input {
+    flex-grow: 1;
+    padding: 0px;
+    padding-left: 16px;
+    padding-top: 4px;
+    padding-bottom: 13px;
+    background-color: #f1f1f1;
+
+    &::placeholder {
+      font-size: $font-size--h4;
+      line-height: $font-size--h4 - 1;
+      letter-spacing: 0.02em;
+      font-family: inherit;
+    }
+  }
+  .field-text__list {
+    display: flex;
+    flex-direction: row;
+
+    &--textarea {
+      padding-top: 48px;
+    }
+
+    &--textarea .field-text__input {
+      min-height: 123px;
+      border: 2px solid $color-black;
+      padding: 0px;
+      padding-top: 15px;
+      padding-left: 15px;
+      font-size: $font-size--h4;
+      line-height: $font-size--h4 - 1;
+      background-color: #ffffff;
+
+      &:hover {
+        border: 2px solid $text-aqua;
+        outline: none;
+      }
+
+      &:active {
+        opacity: 1;
+        border: 2px solid $text-aqua;
+        outline: none
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+  .field-text {
+    width: 700px;
+    margin-bottom: 52;
+
+    &--block {
+      width: 875px;
+      margin-bottom: 0px;
+      padding-top: 68px;
+    }
+  }
+  .field-text__title {
+    width: 175px;
+    text-align: center;
+  }
+  .field-text__list {
+
+    &--textarea {
+      width: 875px;
+    }
+  }
+}
