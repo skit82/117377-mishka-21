@@ -1,20 +1,23 @@
 .product {
   margin-bottom: 72px;
 }
+
 .product__wrapper {
   margin: 0 auto;
-  padding: 0px 30px;
+  padding: 0 30px;
 }
+
 .product__text-title {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 5px;
   font-size: $font-size--sl;
   line-height: $font-size--sl + 5;
   font-weight: bold;
   color: $color-black;
 }
+
 .product__text-hit {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 23px;
   font-size: $font-size--middle;
   line-height: $font-size--middle + 3;
@@ -22,31 +25,38 @@
   color: $text-aqua;
   text-transform: uppercase;
 }
+
 .product__description {
   margin-bottom: 16px;
 }
+
 .product__description-text {
-  margin: 0px;
+  margin: 0;
   line-height: $font-size + 9;
 }
+
 .product__properties {
   width: 260px;
   margin-bottom: 28px;
   border-collapse: collapse;
 }
+
 .product__properties tr {
   height: 41px;
   border-bottom: 1px solid $grey--dark;
 }
+
 .product__property-name {
   padding-right: 10px;
   line-height: $font-size + 5;
   color: $text-dark;
 }
+
 .product__property-value {
   line-height: $font-size + 5;
   color: $text-dark;
 }
+
 .product__buy-price {
   margin-bottom: 25px;
   font-size: $font-size--middle;
@@ -54,6 +64,7 @@
   font-weight: bold;
   color: $text-dark;
 }
+
 .product__buy-order {
   display: block;
   width: auto;
@@ -73,43 +84,52 @@
   .product {
     margin-bottom: 119px;
   }
+
   .product__wrapper {
     max-width: 668px;
-    padding: 0px 50px;
+    padding: 0 50px;
   }
+
   .product__text-title {
     margin-right: auto;
     font-size: $font-size--md + 16;
     line-height: $font-size--md + 23;
   }
+
   .product__text-hit {
     font-size: $font-size--middle;
     line-height: $font-size--middle;
   }
+
   .product__description {
     width: 300px;
     margin-top: -8px;
     margin-bottom: 34px;
   }
+
   .product__description-text {
     font-size: $font-size--middle;
     line-height: $font-size--middle + 13;
   }
+
   .product__properties {
     width: 292px;
     margin-bottom: 55px;
   }
+
   .product__property-name {
-    padding: 0px;
+    padding: 0;
   }
+
   .product__buy-price {
     display: block;
     font-size: $font-size + 5;
     line-height: $font-size + 9;
     text-align: center;
-    margin: 0px;
+    margin: 0;
     margin-bottom: 34px;
   }
+
   .product__buy-order {
     display: block;
     max-width: 289px;
@@ -122,13 +142,16 @@
   .product {
     margin-bottom: 156px;
   }
+
   .product__wrapper {
     max-width: 1050px;
   }
+
   .product__text-title {
     font-size: $font-size--md + 26;
     line-height: $font-size--md + 30px;
   }
+
   .product__properties {
     margin-bottom: 108px;
   }
