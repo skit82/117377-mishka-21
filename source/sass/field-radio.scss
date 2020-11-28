@@ -15,9 +15,10 @@
   color: $color-black;
 
   &:last-child {
-    margin: 0px;
+    margin: 0;
   }
 }
+
 .field-radio__text {
   position: relative;
   padding-left: 62px;
@@ -50,6 +51,7 @@
     }
   }
 }
+
 .field-radio__input[type="radio"] {
   display: none;
 }
@@ -62,12 +64,14 @@
     width: 501px;
     margin-bottom: 53px;
   }
+
   .field-radio__name {
     margin-bottom: 24px;
     padding-top: 17px;
     padding-bottom: 17px;
     font-size: $font-size--h4;
   }
+
   .field-radio__text {
     position: relative;
     padding-left: 80px;
@@ -91,7 +95,7 @@
       width: 19px;
       height: 20px;
       left: 15px;
-      top: 0px;
+      top: 0;
       background-color: $text-aqua;
       border-radius: 50%;
     }

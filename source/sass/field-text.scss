@@ -128,6 +128,7 @@
       padding-top: 17px;
     }
   }
+
   .field-text__item {
     width: 100%;
     padding: 0;
@@ -188,7 +189,7 @@
       &:active {
         opacity: 1;
         border: 2px solid $text-aqua;
-        outline: none
+        outline: none;
       }
     }
   }
@@ -201,7 +202,7 @@
 
     &--block {
       width: 875px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       padding-top: 68px;
     }
   }
@@ -212,7 +213,6 @@
   }
 
   .field-text__list {
-
     &--textarea {
       width: 875px;
     }
