@@ -4,6 +4,7 @@
   align-items: start;
   margin-bottom: 34px;
 }
+
 .field-radio__name {
   position: relative;
   padding-top: 12px;
@@ -103,7 +104,6 @@
 }
 
 @media (min-width: $screen-xl) {
-
   .field-radio {
     display: flex;
     flex-direction: column;
