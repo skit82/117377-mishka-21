@@ -2,9 +2,23 @@
   display: none;
 }
 
+@media (min-width: $screen-md) {
+  .hit-list {
+    display: none;
+  }
+}
+
 @media (min-width: $screen-xl) {
   .hit-list {
-    display: block;
+    display: inline-flex;
+    justify-content: space-between;
+    order: 4;
+    width: 315px;
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+    list-style: none;
+    z-index: 12;
   }
 
   .hit-list__link {

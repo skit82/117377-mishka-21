@@ -1,0 +1,145 @@
+.flashcard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.flashcard__title {
+  margin: 0;
+  margin-bottom: 5px;
+  padding-top: 27px;
+  font-size: $font-size--middle;
+  line-height: $font-size--middle + 7;
+  font-weight: bold;
+  color: $color-black;
+}
+
+.flashcard__button {
+  position: absolute;
+  right: 0;
+  top: 19px;
+  padding: 0;
+  color: #e8e8e8;
+}
+
+.flashcard__image {
+  width: 260px;
+  height: 195px;
+}
+
+.flashcard__link {
+  min-height: 195px;
+  text-decoration: none;
+}
+
+.flashcard__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 177px;
+  padding-left: 27px;
+  padding-right: 27px;
+  border: 1px solid #ededed;
+}
+
+.flashcard__text {
+  padding-bottom: 5px;
+  font-size: $font-size--h5;
+  line-height: $font-size--h5 + 17;
+}
+
+.flashcard__price {
+  line-height: $font-size + 9;
+  font-weight: bold;
+  color: $color-black;
+  margin-right: auto;
+}
+
+.flashcard__footer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 26px;
+  padding-top: 21px;
+  border-top: 2px solid #f5f5f5;
+}
+
+@media (min-width: $screen-md) {
+  .flashcard {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 54px;
+  }
+
+  .flashcard__image {
+    width: 334px;
+    height: 334px;
+  }
+
+  .flashcard__inner {
+    flex-grow: 1;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .flashcard__link {
+    flex-shrink: 0;
+    min-height: 334px;
+  }
+
+  .flashcard__title {
+    padding: 0;
+    padding-top: 24px;
+    margin-bottom: 6px;
+    font-size: $font-size--h4 + 1;
+    letter-spacing: 0.01em;
+  }
+
+  .flashcard__text {
+    font-size: $font-size;
+  }
+
+  .flashcard__price {
+    margin-top: auto;
+    padding-top: 22px;
+    padding-left: 6px;
+    font-size: $font-size--middle;
+  }
+
+  .flashcard__button {
+    position: absolute;
+    right: 5px;
+    top: 22px;
+    padding: 0;
+    color: #e8e8e8;
+  }
+  .flashcard__footer {
+    margin-bottom: 27px;
+    padding: 0;
+    border-top: 1px solid #ececec;
+  }
+}
+
+@media (min-width: $screen-xl) {
+  .flashcard {
+    display: flex;
+    flex-direction: column;
+    width: 317px;
+    margin: 0;
+    margin-bottom: 57px;
+  }
+
+  .flashcard__image {
+    width: 317px;
+    height: 462px;
+  }
+
+  .flashcard__inner {
+    min-height: 195px;
+  }
+
+  .flashcard__link {
+    height: 462px;
+  }
+}
