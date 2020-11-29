@@ -5,10 +5,6 @@
   margin-bottom: 58px;
 }
 
-.video-production__inner {
-  position: relative;
-}
-
 .video-production__list {
   display: flex;
   position: relative;
@@ -58,6 +54,7 @@
 }
 
 .video-production__inner {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 259px;
