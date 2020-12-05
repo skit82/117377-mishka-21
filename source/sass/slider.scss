@@ -1,5 +1,6 @@
 .slider__nav {
   position: static;
+  display: flex;
   margin-top: 29px;
   margin-bottom: 38px;
 }
@@ -25,6 +26,7 @@
   }
 
   .slider__arrow {
+    background-color: #ffffff;
     border: none;
     padding: 0;
     margin: 0;
