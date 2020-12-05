@@ -1,3 +1,16 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: 85px;
+}
+
+.reviews__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .reviews__title {
   margin: 0;
   margin-bottom: 22px;
@@ -25,6 +38,7 @@
 }
 
 .reviews__link {
+  position: static;
   display: block;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -39,15 +53,37 @@
 }
 
 @media (min-width: $screen-md) {
-  .reviews__wrraper {
-    max-width: 668px;
-    padding: 0 50px;
+  .reviews {
+    position: relative;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    padding-right: 50px;
+    padding-left: 39px;
+    margin-bottom: 108px;
+
+    @media (min-resolution: 144dpi) {
+      background-image: url("../img/review@2x.jpg 2x")
+    }
+  }
+
+  .reviews__wrapper {
+    position: relative;
+    width: 668px;
   }
 
   .reviews__title {
     margin-bottom: 49px;
     font-size: $font-size--md + 16;
     line-height: $font-size--md + 23;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .reviews__item-text {
@@ -62,6 +98,9 @@
   }
 
   .reviews__link {
+    position: absolute;
+    right: -3px;
+    top: 0;
     width: 172px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -71,8 +110,23 @@
 }
 
 @media (min-width: $screen-xl) {
+  .reviews {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 98px;
+    margin-bottom: 159px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px auto;
+
+    @media (min-resolution: 144dpi) {
+      background-image: url("../img/review@2x.jpg");
+    }
+  }
+
   .reviews__wrapper {
-    max-width: 1050px;
+    width: 1050px;
     margin: 0 auto;
   }
 
@@ -100,10 +154,14 @@
   }
 
   .reviews__link {
-    width: 172px;
-    padding-top: 15px;
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 78px;
+    width: 170px;
+    padding-top: 16px;
     padding-bottom: 15px;
-    font-size: $font-size--middle;
     text-align: center;
+    border: 2px solid #000000;
   }
 }

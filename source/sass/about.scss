@@ -1,3 +1,7 @@
+.about {
+  margin-bottom: 58px;
+}
+
 .about__title {
   margin: 0;
   margin-bottom: 30px;
@@ -8,12 +12,19 @@
 }
 
 .about__list {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .about__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   font-size: $font-size--middle;
   line-height: $font-size--middle + 3;
   font-weight: bold;
@@ -26,13 +37,48 @@
 }
 
 .about__inner {
+  width: 260px;
   margin: 0 auto;
-  padding: 0 30px;
+}
+
+.about__flower {
+  padding-bottom: 17px;
+  fill: $text-aqua;
+}
+
+.about__money {
+  padding-bottom: 24px;
+  fill: $text-aqua;
+}
+
+.about__heart {
+  padding-bottom: 24px;
+  padding-left: 6px;
+  fill: $text-aqua;
+}
+
+.about__ball {
+  padding-bottom: 16px;
+  fill: $text-aqua;
+}
+
+.about__rocket {
+  padding-bottom: 28px;
+  fill: $text-aqua;
+}
+
+.about__gift {
+  padding-bottom: 19px;
+  fill: $text-aqua;
 }
 
 @media (min-width: $screen-md) {
+  .about {
+    margin-bottom: 80px;
+  }
+
   .about__inner {
-    max-width: 768px;
+    width: 668px;
   }
 
   .about__title {
@@ -40,6 +86,13 @@
     padding-bottom: 41px;
     font-size: $font-size--md + 16;
     line-height: $font-size--md + 23;
+  }
+
+  .about__list {
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
   }
 
   .about__item {
@@ -51,19 +104,79 @@
     &:nth-child(3) {
       margin: 0;
     }
+
+    &--love {
+      order: 2;
+    }
+
+    &--homeland {
+      order: 4;
+    }
+
+    &--package {
+      order: 6;
+    }
+
+    &--ecological {
+      order: 1;
+    }
+
+    &--price {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+    }
+  }
+
+  .about__flower {
+    margin-left: 10px;
+    margin-top: 5px;
+    padding-bottom: 18px;
+  }
+
+  .about__money {
+    margin-left: 4px;
+    padding-bottom: 27px;
+  }
+
+  .about__heart {
+    margin-left: 10px;
+  }
+
+  .about__ball {
+    margin-left: 4px;
+    margin-top: 9px;
+    padding-bottom: 17px;
+  }
+
+  .about__gift {
+    margin-left: 3px;
   }
 }
 
 @media (min-width: $screen-xl) {
+  .about {
+    margin-bottom: 90px;
+  }
+
   .about__inner {
-    max-width: 1050px;
-    padding: 0 auto;
+    width: 1050px;
   }
 
   .about__title {
     margin-left: 170px;
     font-size: $font-size--md + 26;
     line-height: $font-size--md + 30;
+  }
+
+  .about__list {
+    width: 700px;
+    margin-left: 175px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
   }
 
   .about__item {

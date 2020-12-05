@@ -4,6 +4,27 @@
   background-color: $bg-color;
 }
 
+.page-footer__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 41px;
+  margin-left: 38px;
+  padding-top: 23px;
+  padding-bottom: 26px;
+
+  &:hover {
+    opacity: 0.3;
+    transition: all 0.2s;
+  }
+}
+
 .page-footer__copyright-text {
   margin: 0;
   font-size: $font-size--h4;
@@ -12,7 +33,24 @@
   padding-top: 4px;
 }
 
+.page-footer__foto {
+  fill: $text-aqua;
+}
+
+.page-footer__logo-image {
+  display: none;
+}
+
 @media (min-width: $screen-md) {
+  .page-footer__inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 668px;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 46px;
+  }
+
   .page-footer__copyright-text {
     margin: 0;
     padding-top: 8px;
@@ -21,16 +59,65 @@
     font-weight: bold;
     color: $color-black;
   }
+
+  .page-footer__logo-image {
+    width: 102px;
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .page-footer__logo {
+    width: 218px;
+    margin-left: 0px;
+    align-self: center;
+
+    &:hover .page-footer__logo-image {
+      opacity: 1;
+      color: $text-aqua;
+    }
+  }
+
+  .page-footer__copyright {
+    width: 182px;
+    padding: 0;
+    padding-top: 10px;
+    margin-right: 0;
+  }
+
+  .page-footer__copyright-text {
+    margin: 0;
+    padding-top: 8px;
+    font-size: $font-size--middle + 2;
+    line-height: $font-size--middle + 1;
+    font-weight: bold;
+    color: $color-black;
+  }
+
+  .page-footer__foto {
+    width: 27px;
+    height: 34px;
+    padding-top: 2px;
+    fill: $text-aqua;
+  }
 }
 
 @media (min-width: $screen-xl) {
   .page-footer__inner {
-    max-width: 1050px;
-    padding: 0 50px;
+    width: 1050px;
     margin: 0 auto;
   }
 
+  .page-footer__logo {
+    width: 450px;
+  }
+
+  .page-footer__copyright {
+    width: 455px;
+    margin: 0;
+  }
+
   .page-footer__copyright-text {
+    margin-left: auto;
     margin-right: 29px;
     padding-top: 9px;
   }
