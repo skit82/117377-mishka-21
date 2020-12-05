@@ -68,7 +68,7 @@
 
   .page-footer__logo {
     width: 218px;
-    margin-left: 0px;
+    margin-left: 0;
     align-self: center;
 
     &:hover .page-footer__logo-image {
@@ -82,15 +82,6 @@
     padding: 0;
     padding-top: 10px;
     margin-right: 0;
-  }
-
-  .page-footer__copyright-text {
-    margin: 0;
-    padding-top: 8px;
-    font-size: $font-size--middle + 2;
-    line-height: $font-size--middle + 1;
-    font-weight: bold;
-    color: $color-black;
   }
 
   .page-footer__foto {

@@ -69,7 +69,7 @@
 
 .contacts__list-value {
   &--mail {
-    margin-left: auto
+    margin-left: auto;
   }
 
   &--address {
@@ -177,7 +177,7 @@
   .contacts__list-key {
     flex-grow: 0;
     min-height: 66px;
-    margin: 0px;
+    margin: 0;
     margin-right: 25px;
   }
 
