@@ -14,6 +14,17 @@
   position: absolute;
   left: 74px;
   top: 137px;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.2s;
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.6;
+    transition: all 0.2s;
+  }
 }
 
 .video-production__title {
@@ -65,6 +76,15 @@
   width: 260px;
   height: 150px;
   margin-bottom: 30px;
+}
+
+.video-production__video {
+  position: absolute;
+  top: 32px;
+  left: 40px;
+  width: 32px;
+  height: 32px;
+  fill: $text-aqua;
 }
 
 @media (min-width: $screen-md) {
@@ -127,6 +147,12 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
+
+  .video-production__video {
+    position: absolute;
+    left: 40px;
+    top: -4px;
+  }
 }
 
 @media (min-width: $screen-xl) {
@@ -180,5 +206,11 @@
     margin-top: 10px;
     margin-right: 56px;
     align-self: flex-end;
+  }
+
+  .video-production__video {
+    position: absolute;
+    left: 40px;
+    top: 41px;
   }
 }
