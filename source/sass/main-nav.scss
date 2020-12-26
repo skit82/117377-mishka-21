@@ -1,19 +1,37 @@
 .main-nav {
   position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: transparent;
   margin: 0 auto;
 }
 
 .main-nav__list {
+  display: flex;
+  flex-shrink: 0;
+  flex-basis: auto;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.main-nav__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 29px;
+  padding-left: 75px;
+  background-color: transparent;
+  box-shadow: inset 0 -1px 0 0 #e5e5e5;
+}
+
 .main-nav__link {
   display: block;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  padding-left: 76px;
   font-size: $font-size--middle;
   color: $color-black;
   font-weight: bold;
@@ -22,34 +40,83 @@
 }
 
 .main-nav__logo {
+  position: relative;
   display: block;
+  width: 260px;
+  margin: 0px auto;
   text-align: center;
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 15px;
 }
 
 .main-nav__delivery {
   display: none;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 26px;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav__toggle--close {
+  background-image: url("../img/icon-menu-close.svg");
+  background-size: 20px;
+}
+
+.main-nav__box-navigation {
+  top: 80px;
+  z-index: -1;
+  display: none;
+  width: 100%;
+  background-color: #fff;
+
+  &--active {
+    display: block;
+  }
+}
+
 @media (min-width: $screen-md) {
   .main-nav {
+    flex-direction: row;
+    max-height: 89px;
+  }
+
+  .main-nav__box {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 668px;
-    height: 130px;
-    margin: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+  }
+
+  .main-nav__item {
+    min-width: 83px;
+    padding: 19px 37px 23px 0;
+    box-shadow: none;
   }
 
   .main-nav__logo {
-    order: 1;
-    flex-grow: 0;
-    margin-left: 0;
-    padding: 0;
-    padding-top: 25px;
-    height: 66px;
-    border: none;
+    position: absolute;
+    order: -2;
+    text-align: left;
+    padding-bottom: 0;
+    box-shadow: none;
   }
 
   .main-nav__link {
@@ -65,19 +132,6 @@
     display: none;
   }
 
-  .main-nav__list-top {
-    order: 3;
-    display: inline-flex;
-    width: 305px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    padding-top: 19px;
-    list-style: none;
-    z-index: 10;
-  }
-
   .main-nav__item {
     border: none;
   }
@@ -89,11 +143,13 @@
   }
 
   .main-nav__delivery {
+    position: static;
     display: flex;
-    order: 4;
+    width: auto;
+    height: auto;
     margin: 0;
-    padding: 0;
-    padding-top: 19px;
+    margin-left: auto;
+    padding: 19px 0 23px;
     font-size: $font-size;
     line-height: $font-size + 9;
     z-index: 11;
@@ -108,32 +164,41 @@
     width: 1050px;
   }
 
+  .main-nav__box {
+    justify-content: space-between;
+  }
+
   .main-nav__logo {
-    order: 2;
-    width: 323px;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    box-shadow: none;
+    transform: translate(-50%,-50%);
     padding: 0;
   }
 
+  .main-nav__icon-cart {
+    margin-top: 4px;
+  }
+
+  .main-nav__item {
+    padding: 31px 36px 34px 0;
+
+    &:not(:first-child) {
+      min-width: 83px;
+      padding-left: 34px;
+      box-shadow: inset 1px 0 0 0 #e5e5e5;
+    }
+  }
+
   .main-nav__logo-image {
-    width: 149px;
-    height: 72px;
+    width: 150px;
+    height: 74px;
     margin-top: 12px;
     margin-right: 30px;
   }
 
-  .main-nav__list-top {
-    order: 1;
-    width: 377px;
-    padding: 0;
-    padding-top: 34px;
-  }
-
   .main-nav__link {
     font-size: $font-size--middle;
-  }
-
-  .main-nav__delivery {
-    order: 5;
-    padding-top: 17px;
   }
 }

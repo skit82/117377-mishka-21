@@ -11,14 +11,16 @@
 @media (min-width: $screen-xl) {
   .hit-list {
     display: inline-flex;
-    justify-content: space-between;
-    order: 4;
-    width: 315px;
+    position: static;
+    width: auto;
+    height: auto;
     margin: 0;
-    padding: 0;
-    padding-top: 14px;
-    list-style: none;
-    z-index: 12;
+    text-align: right;
+    letter-spacing: .3px;
+  }
+
+  .hit-list__item {
+    padding: 15px 56px 25px 0;
   }
 
   .hit-list__link {
