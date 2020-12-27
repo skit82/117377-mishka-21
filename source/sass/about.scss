@@ -1,5 +1,5 @@
 .about {
-  margin-bottom: 58px;
+  margin-bottom: 56px;
 }
 
 .about__title {
@@ -42,33 +42,39 @@
 }
 
 .about__flower {
+  margin-left: 8px;
   padding-bottom: 17px;
   fill: $text-aqua;
 }
 
 .about__money {
-  padding-bottom: 24px;
+  padding-bottom: 27px;
   fill: $text-aqua;
 }
 
 .about__heart {
-  padding-bottom: 24px;
-  padding-left: 6px;
+  padding-bottom: 21px;
+  padding-left: 8px;
+  margin-top: 2px;
   fill: $text-aqua;
 }
 
 .about__ball {
-  padding-bottom: 16px;
+  padding-bottom: 18px;
+  margin-left: 4px;
   fill: $text-aqua;
 }
 
 .about__rocket {
-  padding-bottom: 28px;
+  margin-left: -6px;
+  margin-top: 2px;
+  padding-bottom: 26px;
   fill: $text-aqua;
 }
 
 .about__gift {
-  padding-bottom: 19px;
+  padding-bottom: 21px;
+  margin-left: 3px;
   fill: $text-aqua;
 }
 
@@ -83,7 +89,7 @@
 
   .about__title {
     margin: 0;
-    padding-bottom: 41px;
+    padding-bottom: 38px;
     font-size: $font-size--md + 16;
     line-height: $font-size--md + 23;
   }
@@ -97,7 +103,7 @@
 
   .about__item {
     width: 334px;
-    margin-bottom: 61px;
+    margin-bottom: 58px;
     font-size: $font-size + 5;
     line-height: $font-size + 7;
 
@@ -142,13 +148,16 @@
   }
 
   .about__heart {
-    margin-left: 10px;
+    margin-left: 9px;
+    margin-top: 5px;
+    padding-left: 0;
+    padding-bottom: 22px;
   }
 
   .about__ball {
     margin-left: 4px;
     margin-top: 9px;
-    padding-bottom: 17px;
+    padding-bottom: 18px;
   }
 
   .about__gift {
@@ -158,7 +167,7 @@
 
 @media (min-width: $screen-xl) {
   .about {
-    margin-bottom: 90px;
+    margin-bottom: 88px;
   }
 
   .about__inner {
@@ -166,7 +175,8 @@
   }
 
   .about__title {
-    margin-left: 170px;
+    margin-left: 175px;
+    padding-bottom: 33px;
     font-size: $font-size--md + 26;
     line-height: $font-size--md + 30;
   }
@@ -181,6 +191,26 @@
 
   .about__item {
     width: 350px;
-    margin-bottom: 59px;
+    margin-bottom: 58px;
+  }
+
+  .about__flower {
+    margin-left: 8px;
+    margin-top: 7px;
+    padding-bottom: 19px;
+  }
+
+  .about__money {
+    margin-left: 2px;
+  }
+
+  .about__rocket {
+    margin-left: -6px;
+  }
+
+  .about__heart {
+    margin-left: 8px;
+    padding-top: 0;
+    padding-bottom: 22px;
   }
 }
