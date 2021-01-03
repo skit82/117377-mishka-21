@@ -8,12 +8,16 @@
   align-items: start;
   margin: 0;
   padding: 0;
-  padding-bottom: 26px;
+  padding-bottom: 30px;
   font-size: $font-size--middle;
   line-height: $font-size--middle - 1;
   font-weight: bold;
   color: $text-aqua;
   text-transform: uppercase;
+
+  &--checkbox {
+    padding-bottom: 25px;
+  }
 
   &::before {
     position: absolute;
@@ -52,10 +56,10 @@
 
 .form__submit {
   display: block;
-  width: 258px;
-  margin-top: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 256px;
+  margin-top: 24px;
+  padding-top: 17px;
+  padding-bottom: 16px;
   font-size: $font-size--middle;
   line-height: $font-size--middle - 1;
   font-weight: bold;
@@ -80,7 +84,7 @@
   }
 
   .form__legend {
-    width: 167px;
+    width: 172px;
     align-items: flex-start;
     padding-top: 18px;
 
@@ -95,7 +99,7 @@
 
   .form__legend--color {
     padding: 0;
-    padding-top: 65px;
+    padding-top: 66px;
   }
 
   .form__inner--item {
@@ -107,13 +111,13 @@
     display: flex;
     max-width: 668px;
     margin: 0 auto;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
 
   .form__completion {
     order: 2;
     margin-left: auto;
-    padding-top: 5px;
+    padding-top: 8px;
     font-size: $font-size--middle;
     line-height: $font-size--middle + 13;
   }
@@ -138,18 +142,18 @@
   }
 
   .form__legend {
-    width: 110px;
-    padding-left: 65px;
+    width: 114px;
+    padding-left: 62px;
   }
 
   .form__wrapper {
-    width: 700px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
   }
 
   .form__completion {
-    padding-top: 2px;
+    padding-top: 8px;
   }
 }

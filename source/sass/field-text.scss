@@ -1,5 +1,13 @@
 .field-text {
   margin-bottom: 34px;
+
+  &--block {
+    margin-bottom: 20px;
+  }
+
+  &--description {
+    margin-bottom: 8px;
+  }
 }
 
 .field-text__name {
@@ -11,7 +19,7 @@
 
 .field-text__list:nth-child(2),
 .field-text__list:nth-child(3) {
-  margin-top: 18px;
+  margin-top: 23px;
 }
 
 .field-text__input:nth-child(2) {
@@ -26,6 +34,10 @@
   color: $text-aqua;
   text-transform: uppercase;
 
+  &--block {
+    padding-bottom: 16px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -38,8 +50,8 @@
 }
 
 .field-text__item {
-  padding-top: 22px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 14px;
   border: none;
   border-bottom: 2px solid #000000;
   font-family: inherit;
@@ -62,11 +74,16 @@
 }
 
 .field-text__input {
-  padding-top: 28px;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 16px;
   border: none;
   border-bottom: 2px solid $color-black;
   font-family: inherit;
+
+  &::placeholder {
+    font-size: $font-size--middle;
+    line-height: $font-size--middle + 1;
+  }
 
   &:hover {
     border-bottom: 2px solid $text-aqua;
@@ -89,6 +106,7 @@
     min-height: 123px;
     border: 2px solid $color-black;
     padding: 0;
+    margin-bottom: 0;
     padding-top: 15px;
     padding-left: 15px;
     font-size: $font-size--h4;
@@ -110,7 +128,7 @@
 
 .field-text__phone {
   position: absolute;
-  right: 0;
+  right: 8px;
   bottom: 32px;
   opacity: 0.2;
 
@@ -122,7 +140,7 @@
 
 .field-text__mail {
   position: absolute;
-  right: 0;
+  right: 3px;
   bottom: 25px;
   opacity: 0.2;
 
@@ -134,7 +152,7 @@
 
 @media (min-width: $screen-md) {
   .field-text {
-    width: 500px;
+    width: 510px;
     margin: 0;
     margin-bottom: 50px;
     padding-top: 65px;
@@ -149,8 +167,8 @@
       position: relative;
       width: 668px;
       margin: 0;
-      padding-bottom: 52px;
-      padding-top: 17px;
+      padding-bottom: 48px;
+      padding-top: 54px;
     }
   }
 
@@ -161,6 +179,7 @@
 
   .field-text__title {
     width: 167px;
+    padding-top: 12px;
 
     &::before {
       display: none;
@@ -168,14 +187,14 @@
 
     &--block {
       padding: 0;
-      padding-top: 17px;
+      padding-top: 20px;
     }
   }
 
   .field-text__item {
     width: 100%;
     padding: 0;
-    padding-top: 4px;
+    padding-top: 2px;
     padding-bottom: 14px;
     padding-left: 17px;
     padding-right: 17px;
@@ -188,15 +207,24 @@
 
   .field-text__list:nth-child(2),
   .field-text__list:nth-child(3) {
-    margin-top: 40px;
+    margin-top: 41px;
+  }
+
+  .field-text__list-email:nth-child(2) {
+    margin-top: 30px;
+  }
+
+  .field-text__input:nth-child(2) {
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .field-text__input {
     flex-grow: 1;
     padding: 0;
     padding-left: 16px;
-    padding-top: 4px;
-    padding-bottom: 13px;
+    padding-top: 10px;
+    padding-bottom: 17px;
     padding-right: 40px;
     background-color: #f1f1f1;
 
@@ -208,12 +236,22 @@
     }
   }
 
+  .field-text__phone {
+    right: 27px;
+    bottom: 16px;
+  }
+
+  .field-text__mail {
+    right: 22px;
+    bottom: 9px;
+  }
+
   .field-text__list {
     display: flex;
     flex-direction: row;
 
     &--textarea {
-      padding-top: 48px;
+      padding-top: 52px;
     }
 
     &--textarea .field-text__input {
@@ -243,23 +281,33 @@
 @media (min-width: $screen-xl) {
   .field-text {
     width: 700px;
-    margin-bottom: 52;
+    margin-bottom: 48px;
 
     &--block {
       width: 875px;
       margin-bottom: 0;
-      padding-top: 68px;
+      padding-top: 56px;
     }
   }
 
   .field-text__title {
-    width: 175px;
-    text-align: center;
+    width: 113px;
+    margin-left: 62px;
   }
 
   .field-text__list {
     &--textarea {
       width: 875px;
     }
+  }
+
+  .field-text__phone {
+    right: 7px;
+    bottom: 18px;
+  }
+
+  .field-text__mail {
+    right: 5px;
+    bottom: 10px;
   }
 }
