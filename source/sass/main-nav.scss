@@ -47,6 +47,15 @@
   text-align: center;
   padding-top: 22px;
   padding-bottom: 15px;
+
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__delivery {
