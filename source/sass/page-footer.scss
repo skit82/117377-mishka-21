@@ -42,6 +42,19 @@
   }
 }
 
+.page-footer__logo-icon {
+
+  &:hover {
+    fill: $aqua-color;
+    transition: all 0.2s;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: all 0.2s;
+  }
+}
+
 .page-footer__logo-image {
   display: none;
 }
