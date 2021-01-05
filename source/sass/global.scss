@@ -27,6 +27,17 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.buttom-mode:focus,
+.buttom-mode:hover {
+  color: #ffffff;
+  background-color: #444444;
+  border: 2px solid #444444;
+}
+
+.buttom-mode:active {
+  color: hsla(0, 0%, 100%, 0.3);
+}
+
 body {
   margin: 0;
   padding: 0;

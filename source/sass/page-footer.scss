@@ -29,9 +29,14 @@
 }
 
 .page-footer__foto {
-  fill: $text-aqua;
+  fill: $primary-color;
 
   &:hover {
+    fill: $aqua-color;
+    transition: all 0.2s;
+  }
+
+  &:active {
     opacity: 0.3;
     transition: all 0.2s;
   }
@@ -64,17 +69,17 @@
     width: 102px;
     display: block;
     padding-bottom: 5px;
+
+    &:hover {
+      fill: $aqua-color;
+      transition: all 0.2s;
+    }
   }
 
   .page-footer__logo {
     width: 218px;
     margin-left: 0;
     align-self: center;
-
-    &:hover .page-footer__logo-image {
-      opacity: 1;
-      color: $text-aqua;
-    }
   }
 
   .page-footer__copyright {

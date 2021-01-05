@@ -29,10 +29,25 @@
   .catalog__title {
     position: relative;
     margin-bottom: 78px;
-    padding-top: 96px;
-    padding-bottom: 82px;
+    padding-top: 100px;
+    padding-bottom: 77px;
     font-size: $font-size--md + 16;
     line-height: $font-size--md + 23;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -11px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 24px;
+      max-height: 34px;
+      padding-top: 2.95652%;
+      background-image: url("../img/zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 50% 100%;
+    }
   }
 
   .catalog__list {
@@ -44,11 +59,26 @@
 
 @media (min-width: $screen-xl) {
   .catalog__title {
-    margin-bottom: 123px;
-    padding-top: 93px;
-    padding-bottom: 109px;
+    margin-bottom: 120px;
+    padding-top: 100px;
+    padding-bottom: 105px;
     font-size: $font-size--md + 26;
     line-height: $font-size--md + 30;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -11px;
+      left: 0;
+      display: block;
+      width: 100%;
+      // height: 24px;
+      height: 34px;
+      padding-top: 2.95652%;
+      background-image: url("../img/zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 50% 100%;
+    }
   }
 
   .catalog__list {

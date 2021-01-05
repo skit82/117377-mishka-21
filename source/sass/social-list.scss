@@ -12,13 +12,32 @@
   list-style: none;
 }
 
-.social-list__item:hover {
-  fill: $text-aqua;
+.social-list__insta:hover {
+  fill: $aqua-color;
   transition: all 0.2s;
 }
 
-.social-list__item:active {
-  fill: $text-aqua;
+.social-list__insta:active {
+  opacity: 0.3;
+  transition: all 0.2s;
+}
+
+.social-list__fb:hover {
+  fill: $aqua-color;
+  transition: all 0.2s;
+}
+
+.social-list__fb:active {
+  opacity: 0.3;
+  transition: all 0.2s;
+}
+
+.social-list__twitter:hover {
+  fill: $aqua-color;
+  transition: all 0.2s;
+}
+
+.social-list__twitter:active {
   opacity: 0.3;
   transition: all 0.2s;
 }
