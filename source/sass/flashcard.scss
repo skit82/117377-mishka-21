@@ -21,6 +21,15 @@
   line-height: $font-size--middle + 7;
   font-weight: bold;
   color: $color-black;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .flashcard__button {
