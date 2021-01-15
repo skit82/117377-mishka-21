@@ -6,6 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
+const htmlmin = require("gulp-htmlmin");
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
@@ -25,7 +26,7 @@ const styles = () => {
   .pipe(rename("style.min.css"))
   .pipe(sourcemap.write("."))
   .pipe(gulp.dest("build/css"))
-  .pipe(sync.stream());
+  .pipe(sync.stream())
 }
 
 exports.styles = styles;
@@ -55,19 +56,27 @@ const images = () => {
 
 exports.images = images;
 
+// HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest("build"));
+}
+
 // Copy
 
-const copy = () => {
+const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.{jpg,png,svg,webp}",
-    "sourse/js/**/*.js",
-    "sourse/*.html"
+    "source/js/**/*.js"
   ], {
     base: "source"
   })
-  .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("build"))
+  done();
 }
 
 exports.copy = copy;
@@ -101,10 +110,16 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     sprite,
+    html,
     copy
   ));
 
 exports.build = build;
+
+const reload = done => {
+  sync.reload();
+  done();
+}
 
 // Watcher
 
@@ -118,6 +133,7 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     sprite,
+    html,
     copy
   ),
   gulp.series(
