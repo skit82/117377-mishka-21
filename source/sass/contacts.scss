@@ -62,6 +62,14 @@
     left: 0;
     background-color: #63d1bb;
   }
+
+  &:hover {
+    color: $aqua-color;
+  }
+
+  &:active {
+    color: $aqua-color;
+  }
 }
 
 .contacts__list-key {
