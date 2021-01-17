@@ -9,6 +9,7 @@ const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
+const uglify = require("gulp-uglify");
 const del = require("del");
 const sync = require("browser-sync").create();
 
@@ -55,6 +56,16 @@ const images = () => {
 }
 
 exports.images = images;
+
+const scripts = () => {
+  return gulp.src("source/js/{map.js,modal.js,toggle-nav.js}")
+  .pipe(uglify())
+  .pipe(rename("{map.min.js,modal.min.js,toggle-nav.min.js}"))
+  .pipe(gulp.dest("build/js"))
+  .pipe(sync.stream());
+}
+
+exports.scripts = scripts;
 
 // HTML
 

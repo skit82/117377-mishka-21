@@ -53,6 +53,7 @@
 
 .promo__link {
   position: relative;
+  display: block;
   text-decoration: none;
 }
 
@@ -91,11 +92,51 @@
 }
 
 .promo__interior {
-  opacity: 0.3;
+  opacity: 0.5;
+  fill: rgba(20, 144, 128, 0.5);
+
+  &:hover {
+    color: rgba(20, 144, 128, 0.7);
+    fill: rgba(20, 144, 128, 0.7);
+  }
+
+  &:active {
+    color: rgba(20, 144, 128, 0.3);
+    fill: rgba(20, 144, 128, 0.3);
+  }
 }
 
 .promo__toy {
-  opacity: 0.3;
+  opacity: 0.5;
+  fill: rgba(20, 144, 128, 0.5);
+
+  &:hover {
+    color: rgba(20, 144, 128, 0.7);
+    fill: rgba(20, 144, 128, 0.7);
+  }
+
+  &:active {
+    color: rgba(20, 144, 128, 0.3);
+    fill: rgba(20, 144, 128, 0.3);
+  }
+}
+
+.promo__link--decor:focus .promo__inner--decor,
+.promo__link--decor:hover .promo__inner--decor {
+  position: absolute;
+  bottom: -95px;
+  left: -50%;
+  right: -50%;
+  background-color: $primary-color;
+}
+
+.promo__link--toy:focus .promo__inner--toy,
+.promo__link--toy:hover .promo__inner--toy {
+  position: absolute;
+  bottom: -95px;
+  left: -50%;
+  right: -50%;
+  background-color: $info-color;
 }
 
 @media (min-width: $screen-md) {
@@ -173,6 +214,24 @@
   .promo__item {
     width: 334px;
     height: 119px;
+  }
+
+  .promo__link--decor:focus .promo__inner--decor,
+  .promo__link--decor:hover .promo__inner--decor {
+    position: absolute;
+    bottom: -95px;
+    left: 0%;
+    right: 0%;
+    background-color: $primary-color;
+  }
+
+  .promo__link--toy:focus .promo__inner--toy,
+  .promo__link--toy:hover .promo__inner--toy {
+    position: absolute;
+    bottom: -95px;
+    left: 0%;
+    right: 0%;
+    background-color: $info-color;
   }
 }
 
