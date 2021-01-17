@@ -67,7 +67,9 @@
 .reviews__item-nik-link {
   font-size: $font-size--middle - 1;
   line-height: $font-size--h3 + 10;
-  font-weight: bold;
+  font-weight: 400;
+  color: $color-black;
+  text-decoration: none;
 }
 
 @media (min-width: $screen-md) {
