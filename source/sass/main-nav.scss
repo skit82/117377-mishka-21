@@ -34,7 +34,7 @@
   display: block;
   font-size: $font-size--middle;
   color: $color-black;
-  font-weight: bold;
+  font-weight: 700;
   line-height: $font-size--middle + 7;
   text-decoration: none;
 
@@ -70,27 +70,89 @@
   display: none;
 }
 
-.main-nav__toggle {
-  position: absolute;
-  top: 26px;
-  right: 0;
-  width: 25px;
-  height: 25px;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  background-image: url("../img/icon-menu-open.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: auto;
-  border: none;
-  cursor: pointer;
+.main-nav__box--closed {
+  display: none;
 }
 
-.main-nav__toggle--close {
-  background-image: url("../img/icon-menu-close.svg");
-  background-size: 20px;
+.main-nav__box--opened {
+  display: block;
 }
+
+.main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  border: 0;
+  outline: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+// .main-nav__toggle {
+  // position: absolute;
+  // top: 26px;
+  // right: 0;
+  // width: 25px;
+  // height: 25px;
+  // margin: 0;
+  // padding: 0;
+  // background-color: transparent;
+  // background-image: url("../img/icon/icon-menu-open.svg");
+  // background-repeat: no-repeat;
+  // background-position: 50% 50%;
+  // background-size: auto;
+  // border: none;
+  // cursor: pointer;
+// }
+
+.main-nav__toggle--no-js {
+  display: none;
+}
+
+.main-nav__box--no-js {
+  display: block;
+  position: static;
+}
+
+.main-nav__toggle--closed {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 20px;
+    height: 2px;
+    transition: 0.3s;
+    background-color: #000000;
+    box-shadow: 0 6px 0 0 #000000,0 12px 0 0 #000000;
+  }
+}
+
+.main-nav__toggle--opened::after,
+.main-nav__toggle--opened::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 22px;
+  height: 2px;
+  background-color: #000;
+}
+
+.main-nav__toggle--opened::before {
+  transform: rotate(45deg);
+}
+
+.main-nav__toggle--opened::after {
+  transform: rotate(-45deg);
+}
+
+// .main-nav__toggle--close {
+  // background-image: url("../img/icon/icon-menu-close.svg");
+  // background-size: 20px;
+// }
 
 .main-nav__box-navigation {
   top: 80px;

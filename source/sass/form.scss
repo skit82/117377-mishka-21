@@ -11,7 +11,7 @@
   padding-bottom: 30px;
   font-size: $font-size--middle;
   line-height: $font-size--middle - 1;
-  font-weight: bold;
+  font-weight: 700;
   color: $text-aqua;
   text-transform: uppercase;
 
@@ -58,16 +58,20 @@
   display: block;
   width: 256px;
   margin-top: 24px;
+  padding: 0;
   padding-top: 17px;
   padding-bottom: 16px;
+  font-family: inherit;
   font-size: $font-size--middle;
   line-height: $font-size--middle - 1;
-  font-weight: bold;
+  font-weight: 700;
   color: $color-black;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  background: transparent;
   border: 2px solid $color-black;
+  cursor: pointer;
 }
 
 @media (min-width: $screen-md) {

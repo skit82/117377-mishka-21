@@ -1,13 +1,9 @@
-.about {
-  margin-bottom: 56px;
-}
-
 .about__title {
   margin: 0;
   margin-bottom: 30px;
   font-size: $font-size--sl;
   line-height: $font-size--sl + 5;
-  font-weight: bold;
+  font-weight: 700;
   color: $color-black;
 }
 
@@ -27,18 +23,23 @@
   width: 100%;
   font-size: $font-size--middle;
   line-height: $font-size--middle + 3;
-  font-weight: bold;
+  font-weight: 700;
   color: $color-black;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   &:nth-child(6) {
     margin-bottom: 0;
   }
 }
 
+.about__item p {
+  margin: 0;
+}
+
 .about__inner {
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 56px;
 }
 
 .about__flower {
@@ -60,7 +61,7 @@
 }
 
 .about__ball {
-  padding-bottom: 18px;
+  padding-bottom: 20px;
   margin-left: 4px;
   fill: $text-aqua;
 }
@@ -73,7 +74,7 @@
 }
 
 .about__gift {
-  padding-bottom: 21px;
+  padding-bottom: 24px;
   margin-left: 3px;
   fill: $text-aqua;
 }
@@ -103,7 +104,7 @@
 
   .about__item {
     width: 334px;
-    margin-bottom: 58px;
+    margin-bottom: 56px;
     font-size: $font-size + 5;
     line-height: $font-size + 7;
 
@@ -144,7 +145,7 @@
 
   .about__money {
     margin-left: 4px;
-    padding-bottom: 27px;
+    padding-bottom: 26px;
   }
 
   .about__heart {
@@ -191,7 +192,7 @@
 
   .about__item {
     width: 350px;
-    margin-bottom: 58px;
+    margin-bottom: 56px;
   }
 
   .about__flower {

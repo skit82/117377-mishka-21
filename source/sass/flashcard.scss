@@ -19,7 +19,7 @@
   padding-top: 27px;
   font-size: $font-size--middle;
   line-height: $font-size--middle + 7;
-  font-weight: bold;
+  font-weight: 700;
   color: $color-black;
   cursor: pointer;
 
@@ -69,7 +69,7 @@
 
 .flashcard__price {
   line-height: $font-size + 9;
-  font-weight: bold;
+  font-weight: 700;
   color: $color-black;
   margin-right: auto;
 }
@@ -172,6 +172,11 @@
     width: 317px;
     margin: 0;
     margin-bottom: 57px;
+    margin-right: 49px;
+
+    &:nth-child(4n-1) {
+      margin-right: 0;
+    }
   }
 
   .flashcard__image {

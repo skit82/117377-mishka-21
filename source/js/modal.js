@@ -1,4 +1,4 @@
-for (var btn__order = document.querySelectorAll(".flashcard__button--order"), popup = document.querySelector(".modal__order"), overlay = document.querySelector(".modal__overlay"), i = 0; i < btn__order.length; i++)
+for (var btn__order = document.querySelectorAll(".flashcard__button--order, .product__text-hit--order"), popup = document.querySelector(".modal__order"), overlay = document.querySelector(".modal__overlay"), i = 0; i < btn__order.length; i++)
 btn__order[i].addEventListener("click", function(e) {
   e.preventDefault(),
   popup.classList.add("modal__order--show"),

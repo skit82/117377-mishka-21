@@ -11,7 +11,7 @@
   margin-bottom: 13px;
   font-size: $font-size--middle;
   line-height: $font-size--middle + 1;
-  font-weight: bold;
+  font-weight: 700;
   color: $color-black;
   cursor: pointer;
 
@@ -61,6 +61,7 @@
     }
   }
 
+  &:focus::before,
   &:hover::before {
     border: 2px solid #63d1bb;
   }
@@ -68,10 +69,6 @@
   &:active::before {
     border: 2px solid rgba(68, 68, 68, 0.3);
   }
-}
-
-.field-radio__input[type="radio"] {
-  display: none;
 }
 
 @media (min-width: $screen-md) {
@@ -115,13 +112,10 @@
     }
 
     &::after {
-      display: none;
-      position: absolute;
-      content: "";
-      width: 19px;
+      width: 20px;
       height: 20px;
       left: 15px;
-      top: 0;
+      top: 0px;
       background-color: $text-aqua;
       border-radius: 50%;
     }
@@ -132,5 +126,20 @@
   .field-radio {
     display: flex;
     flex-direction: column;
+  }
+
+  .field-radio__text {
+    &::after {
+      display: none;
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      left: 15px;
+      top: -3px;
+      background-color: $text-aqua;
+      border-radius: 50%;
+    }
+
   }
 }

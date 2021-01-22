@@ -1,34 +1,13 @@
-"use strict";
-
-var BREAKPOINTS = {
-  mobile: "768px",
-  tablet: "768px",
-  desktop: "1150px"
-};
-
-var toggleButton = document.querySelector(".js-hamburger-button"),
-  mainNav = document.querySelector(".main-nav__box");
-
-
-function loadShow() {
-  toggleButton.classList.remove("visually-hidden");
-}
-
-function hideOnMedia(e) {
-  if (e.matches) {
-    mainNav.classList.remove("main-nav__box-navigation");
-  } else {
-    mainNav.classList.add("main-nav__box-navigation");
-  }
-}
-
-var mediaEvent = window.matchMedia("(min-width: " + BREAKPOINTS.tablet.toString() + ")");
-hideOnMedia(mediaEvent);
-mediaEvent.addListener(hideOnMedia);
-
-window.addEventListener("load", loadShow);
-
-toggleButton.addEventListener("click", function() {
-  this.classList.toggle("main-nav__toggle--close");
-  mainNav.classList.toggle("main-nav__box-navigation--active");
+var navMain = document.querySelector(".main-nav__box"),
+  navToggle = document.querySelector(".main-nav__toggle");
+navMain.classList.remove("main-nav__box--no-js"),
+navToggle.classList.remove("main-nav__toggle--no-js"),
+navToggle.addEventListener("click", function() {
+  navMain.classList.contains("main-nav__box--closed") ? (navMain.classList.remove("main-nav__box--closed"),
+  navMain.classList.add("main-nav__box--opened"),
+  navToggle.classList.remove("main-nav__toggle--closed"),
+  navToggle.classList.add("main-nav__toggle--opened")) : (navMain.classList.add("main-nav__box--closed"),
+  navMain.classList.remove("main-nav__box--opened"),
+  navToggle.classList.add("main-nav__toggle--closed"),
+  navToggle.classList.remove("main-nav__toggle--opened"))
 });

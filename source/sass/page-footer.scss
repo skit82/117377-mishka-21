@@ -24,7 +24,7 @@
   margin: 0;
   font-size: $font-size--h4;
   line-height: $font-size--h4 - 1;
-  font-weight: bold;
+  font-weight: 700;
   padding-top: 4px;
 }
 
@@ -85,6 +85,10 @@
     &:hover {
       fill: $aqua-color;
       transition: all 0.2s;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 

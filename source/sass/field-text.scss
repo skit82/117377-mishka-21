@@ -13,13 +13,21 @@
 .field-text__name {
   font-size: $font-size--middle;
   line-height: $font-size--middle + 1;
-  font-weight: bold;
+  font-weight: 700;
   color: $color-black;
 }
 
-.field-text__list:nth-child(2),
-.field-text__list:nth-child(3) {
+// .field-text__list:nth-child(2),
+// .field-text__list:nth-child(3) {
+  // margin-top: 23px;
+// }
+
+.field-text__list {
   margin-top: 23px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .field-text__input:nth-child(2) {
@@ -30,7 +38,7 @@
 .field-text__title {
   font-size: $font-size--middle;
   line-height: $font-size--middle - 1;
-  font-weight: bold;
+  font-weight: 700;
   color: $text-aqua;
   text-transform: uppercase;
 
@@ -205,13 +213,25 @@
     }
   }
 
-  .field-text__list:nth-child(2),
-  .field-text__list:nth-child(3) {
+  // .field-text__list:nth-child(2),
+  // .field-text__list:nth-child(3) {
+    // margin-top: 41px;
+  // }
+
+  .field-text__list {
     margin-top: 41px;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
-  .field-text__list-email:nth-child(2) {
+  .field-text__list--box {
     margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   .field-text__input:nth-child(2) {

@@ -5,9 +5,14 @@
   margin: 0 auto;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 570px auto;
   background-position: center -18px;
   background-color: $bg-color-dark;
   margin-bottom: 31px;
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
 }
 
 .promo__wrapper {
@@ -28,7 +33,7 @@
   padding-top: 70px;
   padding-bottom: 122px;
   font-size: $font-size--md;
-  font-weight: bold;
+  font-weight: 700;
   line-height: $font-size--md + 3;
   text-align: center;
   color: $color-black;
@@ -86,7 +91,7 @@
   max-width: 114px;
   font-size: $font-size--h4;
   line-height: $font-size--h4 + 5;
-  font-weight: bold;
+  font-weight: 700;
   white-space: pre-line;
   color: #ffffff;
 }
@@ -94,35 +99,16 @@
 .promo__interior {
   opacity: 0.5;
   fill: rgba(20, 144, 128, 0.5);
-
-  &:hover {
-    color: rgba(20, 144, 128, 0.7);
-    fill: rgba(20, 144, 128, 0.7);
-  }
-
-  &:active {
-    color: rgba(20, 144, 128, 0.3);
-    fill: rgba(20, 144, 128, 0.3);
-  }
 }
 
 .promo__toy {
   opacity: 0.5;
   fill: rgba(20, 144, 128, 0.5);
-
-  &:hover {
-    color: rgba(20, 144, 128, 0.7);
-    fill: rgba(20, 144, 128, 0.7);
-  }
-
-  &:active {
-    color: rgba(20, 144, 128, 0.3);
-    fill: rgba(20, 144, 128, 0.3);
-  }
 }
 
 .promo__link--decor:focus .promo__inner--decor,
-.promo__link--decor:hover .promo__inner--decor {
+.promo__link--decor:hover .promo__inner--decor,
+.promo__link--decor:active .promo__inner--decor {
   position: absolute;
   bottom: -95px;
   left: -50%;
@@ -131,12 +117,40 @@
 }
 
 .promo__link--toy:focus .promo__inner--toy,
-.promo__link--toy:hover .promo__inner--toy {
+.promo__link--toy:hover .promo__inner--toy,
+.promo__link--toy:active .promo__inner--toy {
   position: absolute;
   bottom: -95px;
   left: -50%;
   right: -50%;
   background-color: $info-color;
+}
+
+.promo__link--decor:active .promo__text,
+.promo__link--toy:active .promo__text {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.promo__link--decor:focus .promo__interior,
+.promo__link--decor:hover .promo__interior {
+  color: rgba(20, 144, 128, 0.7);
+  fill: rgba(20, 144, 128, 0.7);
+}
+
+.promo__link--decor:active .promo__interior {
+  color: rgba(20, 144, 128, 0.3);
+  fill: rgba(20, 144, 128, 0.3);
+}
+
+.promo__link--toy:focus .promo__toy,
+.promo__link--toy:hover .promo__toy {
+  color: rgba(20, 144, 128, 0.7);
+  fill: rgba(20, 144, 128, 0.7);
+}
+
+.promo__link--toy:active .promo__toy {
+  color: rgba(20, 144, 128, 0.3);
+  fill: rgba(20, 144, 128, 0.3);
 }
 
 @media (min-width: $screen-md) {
@@ -155,12 +169,13 @@
       position: absolute;
       content: "";
       left: 0;
-      bottom: -9px;
+      bottom: -12px;
       width: 100%;
-      height: 23px;
-      background-image: url("../img/bg-zigzag-fill.svg");
+      height: 24px;
+      max-height: 34px;
+      background-image: url("../img/zigzag-fill.svg");
       background-repeat: repeat-x;
-      // background-size: 759px 24px;
+      background-position: 50% 100%;
     }
   }
 
@@ -213,7 +228,7 @@
 
   .promo__item {
     width: 334px;
-    height: 119px;
+    min-height: 119px;
   }
 
   .promo__link--decor:focus .promo__inner--decor,
@@ -233,6 +248,10 @@
     right: 0%;
     background-color: $info-color;
   }
+
+  .promo__toy {
+    margin-top: 5px;
+  }
 }
 
 @media (min-width: $screen-xl) {
@@ -243,6 +262,20 @@
 
     @media (min-resolution: 144dpi) {
       background-image: url("../img/hero-desktop@2x.jpg");
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -20px;
+      width: 100%;
+      height: 37px;
+      min-height: 37px;
+      background-image: url("../img/zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 50% 50%;
+      background-size: 1250px 100%;
     }
   }
 

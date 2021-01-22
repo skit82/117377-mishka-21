@@ -1,6 +1,4 @@
-mapImage = document.querySelector(".contacts__image");
 function init() {
-    mapImage.classList.add("contacts__image--hide");
     var e = new ymaps.Map("map",{
         center: [59.93863106, 30.3230545],
         zoom: 16

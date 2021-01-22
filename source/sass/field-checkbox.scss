@@ -12,7 +12,7 @@
   margin-bottom: 22px;
   font-size: $font-size--middle;
   line-height: $font-size--middle + 1;
-  font-weight: bold;
+  font-weight: 700;
   color: $color-black;
 
   &:last-child {
@@ -43,7 +43,7 @@
     top: 10px;
     width: 37px;
     height: 37px;
-    background-image: url("../img/icon-tick.svg");
+    background-image: url("../img/icon/icon-ticks.svg");
     background-repeat: no-repeat;
     background-size: calc(70%);
 
@@ -56,14 +56,14 @@
     border: 2px solid $text-aqua;
   }
 
-  &:active::after {
+  &:active::before {
     border: 2px solid rgba(68, 68, 68, 0.3);
   }
 }
 
-.field-checkbox__input[type="checkbox"] {
-  display: none;
-}
+// .field-checkbox__input[type="checkbox"] {
+  // display: none;
+// }
 
 @media (min-width: $screen-md) {
   .field-checkbox {
@@ -107,21 +107,27 @@
       display: none;
       position: absolute;
       content: "";
-      left: 12px;
-      top: 10px;
-      background-image: url("../img/icon-tick.svg");
+      left: 9px;
+      top: 6px;
+      background-image: url("../img/icon/icon-ticks.svg");
       background-repeat: no-repeat;
+      background-size: calc(90%);
+
+      input:checked ~ & {
+        display: block;
+      }
     }
   }
 }
 
 @media (min-width: $screen-xl) {
   .field-checkbox {
-    width: 770px;
+    width: 870px;
+    justify-content: flex-start;
   }
 
   .field-checkbox__name {
-    width: 244px;
+    width: 263px;
   }
 
   .field-checkbox__text {
@@ -134,8 +140,8 @@
     }
 
     &::after {
-      left: 12px;
-      top: 7px;
+      left: 9px;
+      top: 2px;
     }
   }
 }
