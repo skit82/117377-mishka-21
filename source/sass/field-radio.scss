@@ -61,14 +61,28 @@
     }
   }
 
-  &:focus::before,
-  &:hover::before {
-    border: 2px solid #63d1bb;
-  }
+  // &:focus::before {
+    // outline: #63d1bb;
+  // }
 
-  &:active::before {
-    border: 2px solid rgba(68, 68, 68, 0.3);
-  }
+  // &:hover::before {
+    // border: 2px solid #63d1bb;
+  // }
+
+  // &:active::before {
+    // border: 2px solid rgba(68, 68, 68, 0.3);
+  // }
+}
+
+.field-radio__input:focus + .field-radio__text::before {
+  border: 2px solid #63d1bb;
+}
+.field-radio__input:hover + .field-radio__text::before {
+  border: 2px solid #63d1bb;
+}
+
+.field-radio__input:active + .field-radio__text::before {
+  border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
 @media (min-width: $screen-md) {

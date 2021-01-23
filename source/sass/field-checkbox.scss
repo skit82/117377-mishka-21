@@ -52,13 +52,26 @@
     }
   }
 
-  &:hover::before {
-    border: 2px solid $text-aqua;
-  }
+  // &:focus::before {
+    // border: 2px solid $text-aqua;
+  // }
 
-  &:active::before {
-    border: 2px solid rgba(68, 68, 68, 0.3);
-  }
+  // &:hover::before {
+    // border: 2px solid $text-aqua;
+  // }
+
+  // &:active::before {
+    // border: 2px solid rgba(68, 68, 68, 0.3);
+  // }
+}
+
+.field-checkbox__input:focus + .field-checkbox__text::before,
+.field-checkbox__input:hover + .field-checkbox__text::before {
+  border: 2px solid $text-aqua;
+}
+
+.field-checkbox__input:active + .field-checkbox__text::before {
+  border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
 // .field-checkbox__input[type="checkbox"] {

@@ -61,6 +61,8 @@
   padding-top: 17px;
   padding-bottom: 14px;
   border: none;
+  font-size: $font-size--middle;
+  line-height: $font-size--middle + 1;
   border-bottom: 2px solid #000000;
   font-family: inherit;
 
@@ -85,6 +87,8 @@
   padding-top: 12px;
   padding-bottom: 16px;
   border: none;
+  font-size: $font-size--middle;
+  line-height: $font-size--middle + 1;
   border-bottom: 2px solid $color-black;
   font-family: inherit;
 
@@ -163,7 +167,7 @@
     width: 510px;
     margin: 0;
     margin-bottom: 50px;
-    padding-top: 65px;
+    padding-top: 60px;
 
     &--description {
       width: 100%;
@@ -182,6 +186,7 @@
 
   .field-text__name {
     margin-right: 26px;
+    margin-top: 5px;
     font-size: $font-size--h4;
   }
 
@@ -202,14 +207,16 @@
   .field-text__item {
     width: 100%;
     padding: 0;
-    padding-top: 2px;
+    // padding-top: 2px;
     padding-bottom: 14px;
     padding-left: 17px;
     padding-right: 17px;
+    font-size: $font-size--h4;
+    line-height: $font-size--h4 - 1;
 
     &::placeholder {
       font-size: $font-size--h4;
-      letter-spacing: 0.025em;
+      // letter-spacing: 0.025em;
     }
   }
 
@@ -219,7 +226,7 @@
   // }
 
   .field-text__list {
-    margin-top: 41px;
+    margin-top: 35px;
 
     &:first-child {
       margin-top: 0;
@@ -227,7 +234,7 @@
   }
 
   .field-text__list--box {
-    margin-top: 30px;
+    margin-top: 27px;
 
     &:first-child {
       margin-top: 0;
@@ -243,9 +250,12 @@
     flex-grow: 1;
     padding: 0;
     padding-left: 16px;
-    padding-top: 10px;
-    padding-bottom: 17px;
+    padding-top: 5px;
+    padding-bottom: 15px;
     padding-right: 40px;
+    font-family: inherit;
+    font-size: $font-size--h4;
+    line-height: $font-size--h4 - 1;
     background-color: #f1f1f1;
 
     &::placeholder {
@@ -319,6 +329,14 @@
     &--textarea {
       width: 875px;
     }
+  }
+
+  .field-text__item {
+    padding-bottom: 13px;
+  }
+
+  .field-text__input {
+    padding-bottom: 16px;
   }
 
   .field-text__phone {
